@@ -1,0 +1,284 @@
+/* Voucher Popup Styles */
+
+.voucher-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+}
+
+.voucher-popup-container {
+    position: relative;
+    max-width: 950px;
+    width: 90%;
+    max-height: 90vh;
+}
+
+.voucher-popup-content {
+    position: relative;
+    padding: 40px;
+}
+
+/* Close button */
+.voucher-popup-container .voucher-popup-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none !important;
+    border: none !important;
+    font-size: 30px !important;
+    cursor: pointer;
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    padding: 0 !important;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.voucher-popup-close:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+/* Swiper container */
+.voucher-swiper-container {
+    margin-bottom: 30px;
+    min-height: 400px;
+}
+
+.voucher-swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.voucher-slide-content {
+    display: flex;
+    gap: 20px;
+    height: 400px;
+}
+
+/* Swiper navigation buttons */
+.voucher-nav-next,
+.voucher-nav-prev {
+    width: 40px;
+    height: 40px;
+    transition: all 0.3s ease;
+}
+
+.voucher-nav-next:after,
+.voucher-nav-prev:after {
+    font-size: 20px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.voucher-nav-next {
+    right: -25px;
+}
+
+.voucher-nav-prev {
+    left: -25px;
+}
+
+/* Panels */
+.voucher-panel {
+    flex: 1;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* Front panel (red background) */
+.voucher-front-panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.voucher-image-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.voucher-front-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+/* Back panel (white background) */
+.voucher-back-panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.voucher-back-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+/* Category tabs */
+.voucher-categories {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.voucher-popup-container button.voucher-category-btn {
+    padding: 5px 25px;
+    border: 2px solid #FFFFFF !important;
+    border-radius: 30px;
+    background: transparent;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.voucher-category-btn:hover,
+.voucher-category-btn.active {
+    background: #fff !important;
+    color: var(--color-sub) !important;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .voucher-popup-container {
+        width: 95%;
+        margin: 20px;
+        max-height: 95vh;
+        overflow-y: auto;
+    }
+    
+    .voucher-popup-content {
+        padding: 20px;
+    }
+    
+    .voucher-slide-content {
+        flex-direction: column;
+        gap: 15px;
+        height: auto;
+        min-height: 300px;
+    }
+    
+    .voucher-panel {
+        min-height: 200px;
+    }
+    
+    .voucher-back-panel {
+        min-height: 200px;
+    }
+    
+    .voucher-nav-next,
+    .voucher-nav-prev {
+        display: none;
+    }
+    
+    .voucher-categories {
+        gap: 8px;
+    }
+    
+    .voucher-category-btn {
+        padding: 10px 16px;
+        font-size: 12px;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    .voucher-popup-content {
+        padding: 15px;
+    }
+    
+    .voucher-slide-content {
+        min-height: 250px;
+    }
+    
+    .voucher-back-panel {
+        min-height: 150px;
+    }
+    
+    .voucher-categories {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .voucher-category-btn {
+        width: 100%;
+        max-width: 200px;
+    }
+}
+
+/* Animation for popup appearance */
+.voucher-popup-overlay.show {
+    animation: fadeIn 0.3s ease-out;
+}
+
+.voucher-popup-container.show {
+    animation: slideIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8) translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+/* Loading state */
+.voucher-image-container.loading {
+    background: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.voucher-image-container.loading::after {
+    content: '';
+    width: 40px;
+    height: 40px;
+    border: 4px solid #ddd;
+    border-top: 4px solid #e74c3c;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

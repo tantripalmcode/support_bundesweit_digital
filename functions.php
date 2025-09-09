@@ -18,9 +18,11 @@ function bundesweit_enqueue_child_scripts() {
     wp_register_style('child-style2', get_stylesheet_directory_uri() . '/style2.css', array(), $modified, 'all');
     wp_enqueue_style('child-style2');
 
+
     //wp_enqueue_script('jquery');
     $modified = date( 'YmdHis', filemtime( get_stylesheet_directory() . '/js/custom.js' ) );
-    wp_enqueue_script('custom', get_stylesheet_directory_uri() . '/js/custom.js', array(), $modified, 'all');
+    wp_enqueue_script('custom', get_stylesheet_directory_uri() . '/js/custom.js', array(), $modified, array('in_footer' => true));
+
 
 }
 
@@ -55,6 +57,7 @@ function mycustom_wpcf7_form_elements( $form ) {
     $form = do_shortcode( $form );
     return $form;
 }
+
 
 
 
