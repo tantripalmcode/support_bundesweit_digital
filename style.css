@@ -1,0 +1,1007 @@
+/*
+ Theme Name:   budigital Child Theme
+ Theme URI:    https://bundesweit.digital/
+ Description:  budigital Child Theme
+ Author:       bundesweit.digital GmbH
+ Author URI:   https://bundesweit.digital/
+ Template:     budigital
+ Version:      1.1.1
+*/
+
+/*HEADER*/
+
+#breadcrumbs {
+    padding-top: 25px;
+}
+
+#breadcrumbs {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    color: #a7afb8;
+}
+
+@media (max-width: 1024px) {
+    #breadcrumbs {
+        margin-bottom: 10px;
+        font-size: 11px;
+    }
+}
+
+#breadcrumbs a {
+    text-decoration: none;
+    color: var(--color-custom-2);
+}
+
+#breadcrumbs a:hover {
+    color: var(--color-custom);
+}
+
+#breadcrumbs .breadcrumb_last {
+    color: var(--color-sub);
+}
+
+#breadcrumbs .sep {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+@media (max-width: 1024px) {
+    #breadcrumbs .sep {
+        margin: 0 15px;
+    }
+}
+
+
+.masterhead {
+
+    box-shadow: 0px 2px 5px 0px rgb(112 112 112 / 75%);
+    height: 90px !important;
+}
+
+/*FOOTER*/
+
+.footer_widget.footer_3 .menu {
+    float: right !important;
+    text-align: end !important;
+}
+
+.footer_widget.footer_1 {
+    width: 50%;
+}
+
+.footer_widget.footer_2 {
+    text-align: center;
+}
+
+.footer_widget.footer_2 .footer-service {
+    font-size: 14px;
+    padding-top: 15px;
+    color: #707070;
+    text-align: center;
+}
+
+.footer {
+
+    padding: 50px 0px 50px 0px;
+}
+
+/*WP FORMS*/
+
+
+
+
+div.wpforms-container-full .wpforms-form .wpforms-field {
+    padding: 20px 0;
+
+}
+
+.wpforms-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.wpforms-grid.split {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+@media (max-width: 767px) {
+    .wpforms-grid {
+        display: block;
+
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1100px) {
+    .wpforms-grid {
+        display: block;
+
+    }
+}
+
+@media(max-width: 950px) {
+    .wpforms-grid.split {
+        display: block;
+
+    }
+}
+
+.wpforms-grid .wpforms-grid-item-left .wpforms-field-html {
+    padding-bottom: 25px !important;
+}
+
+.wpforms-grid .wpforms-grid-item-left .fill-back {
+    /*background: var(--color-custom-2)!important;*/
+    /*padding: 10px 25px 15px 25px!important;*/
+}
+
+
+.wpforms-grid .wpforms-grid-item-right {
+    background: #fff !important;
+}
+
+.wpforms-grid-item-center {
+    background: var(--color-custom-2) !important;
+}
+
+.wpforms-grid .wpforms-grid-item-right .wpforms-field-textarea {
+    padding-top: 60px !important;
+    padding-bottom: 25px !important;
+}
+
+.wpforms-grid .wpforms-grid-item-right .wpforms-field:first-child {
+    padding-top: 25px !important;
+
+}
+
+.wpforms-grid.split .wpforms-grid-item-right .wpforms-field:first-child {
+    padding-top: 5px !important;
+
+}
+
+div.wpforms-container-full .wpforms-form button[type=submit],
+div.wpforms-container-full .wpforms-form .wpforms-page-button {
+    background-color: #eee;
+    border: 1px solid #ddd;
+    color: #333;
+    font-size: 1em;
+    padding: 10px 15px;
+    max-width: 300px;
+}
+
+.wpforms-grid .wpforms-grid-item-right .wpforms-field-checkbox {
+    padding-top: 35px !important;
+
+}
+
+div.wpforms-container-full .wpforms-form textarea.wpforms-field-medium {
+    height: 185px !important;
+}
+
+
+.wpforms-grid .wpforms-grid-item-center .wpforms-submit-container {
+    padding: 0px 25px 25px 25px !important;
+}
+
+.wpforms-grid .wpforms-grid-item-right .wpforms-field .wpforms-uloader {
+    border: 2px dashed var(--color-sub) !important;
+    background: white !important;
+
+}
+
+.wpforms-grid .wpforms-grid-item-right .wpforms-field ul li::marker {
+    color: var(--color-custom-2);
+}
+
+.wpforms-submit {
+    background-color: var(--color-sub) !important;
+    color: white !important;
+    font-weight: bold;
+    max-width: 200px;
+}
+
+
+
+/*.tiles .tile{
+
+    border: 2px solid #E3EDEB;
+    padding: 25px 0px 0px 0px!important;
+}
+
+
+.tiles .tile-default .img-container{
+    padding-bottom: 25px;
+}
+*/
+.tiles .tile h4,
+.tiles .tile .icon_caption {
+
+    color: #51595a !important;
+    margin: auto;
+    word-break: break-word;
+}
+
+.element-cta:after {
+    background: var(--color-light) !important;
+}
+
+
+@media (max-width: 768px) {
+    .tiles .tile {
+        flex-basis: 100% !important;
+    }
+}
+
+#toggle {
+    display: none;
+}
+
+
+@media only screen and (max-width: 419px) {
+    header .branding img {
+        max-width: calc(100% - 20px);
+    }
+}
+
+/*Plattform*/
+
+
+.wpcf7-special-radio-plattform {
+    margin: 0;
+    padding: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.special_radio_card_plattform_0 {
+    background-image: url(/wp-content/uploads/2022/02/Content.png);
+}
+
+.special_radio_card_plattform_1 {
+    background-image: url(/wp-content/uploads/2022/02/Landing-Page.png);
+}
+
+.special_radio_card_plattform_2 {
+    background-image: url(/wp-content/uploads/2022/02/Full-Time-Support.png);
+}
+
+.special_radio_card_plattform_3 {
+    background-image: url(/wp-content/uploads/2022/02/E-Mail-Marketing.png);
+}
+
+.special_radio_card_plattform_4 {
+    background-image: url(/wp-content/uploads/2022/02/Technical-Support.png);
+}
+
+.special_radio_card_plattform_5 {
+    background-image: url(/wp-content/uploads/2022/02/Search-optimization.png);
+}
+
+.special_radio_card_plattform_6 {
+    background-image: url(/wp-content/uploads/2022/02/Search-optimization.png);
+}
+
+.special_radio_card_plattform_7 {
+    background-image: url(/wp-content/uploads/2022/02/Search-optimization.png);
+}
+
+.special_radio_card_plattform_8 {
+    background-image: url(/wp-content/uploads/2022/02/Technical-Support.png);
+}
+
+.special_radio_card_plattform_9 {
+    background-image: url(/wp-content/uploads/2022/02/Technical-Support.png);
+}
+
+.wpcf7-list-item {
+    margin: auto;
+}
+
+.wpcf7-special-radio-container-plattform .wpcf7-list-item-label {
+    display: block
+}
+
+.wpcf7-list-item-label {
+    text-align: center;
+}
+
+.thema {
+    background-position: center center;
+}
+
+
+.wpcf7-form-control.wpcf7-checkbox.wpcf7-validates-as-required.wpcf7-special-radio-container-plattform {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 5px;
+}
+
+.wpcf7-special-radio-plattform:active+.plattform {
+    opacity: .9;
+}
+
+.wpcf7-special-radio-plattform:checked+.plattform {
+    -webkit-filter: none;
+    -moz-filter: none;
+    filter: none;
+}
+
+.plattform {
+    cursor: pointer;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    -webkit-transition: all 100ms ease-in;
+    -moz-transition: all 100ms ease-in;
+    transition: all 100ms ease-in;
+    -webkit-filter: brightness(1.8) grayscale(1) opacity(.7);
+    -moz-filter: brightness(1.8) grayscale(1) opacity(.7);
+    filter: brightness(1.8) grayscale(1) opacity(.7);
+}
+
+.plattform:hover {
+    -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
+    -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
+    filter: brightness(1.2) grayscale(.5) opacity(.9);
+}
+
+
+
+/*Thema*/
+
+
+.wpcf7-special-radio-thema {
+    margin: 0;
+    padding: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.special_radio_card_thema_0 {
+    background-image: url(/wp-content/uploads/2022/02/Content.png);
+}
+
+.special_radio_card_thema_1 {
+    background-image: url(/wp-content/uploads/2022/02/Landing-Page.png);
+}
+
+.special_radio_card_thema_2 {
+    background-image: url(/wp-content/uploads/2022/02/Full-Time-Support.png);
+}
+
+.special_radio_card_thema_3 {
+    background-image: url(/wp-content/uploads/2022/02/E-Mail-Marketing.png);
+}
+
+.special_radio_card_thema_4 {
+    background-image: url(/wp-content/uploads/2022/02/Technical-Support.png);
+}
+
+.special_radio_card_thema_5 {
+    background-image: url(/wp-content/uploads/2022/02/Search-optimization.png);
+}
+
+.special_radio_card_thema_6 {
+    background-image: url(/wp-content/uploads/2022/02/Search-optimization.png);
+}
+
+.special_radio_card_thema_7 {
+    background-image: url(/wp-content/uploads/2022/02/Search-optimization.png);
+}
+
+.special_radio_card_thema_8 {
+    background-image: url(/wp-content/uploads/2022/02/Technical-Support.png);
+}
+
+.special_radio_card_thema_9 {
+    background-image: url(/wp-content/uploads/2022/02/Technical-Support.png);
+}
+
+.wpcf7-list-item {
+    margin: auto;
+}
+
+.wpcf7-special-radio-container-thema .wpcf7-list-item-label {
+    display: block
+}
+
+.wpcf7-list-item-label {
+    text-align: center;
+}
+
+.thema {
+    background-position: center center;
+
+}
+
+.wpcf7-form-control.wpcf7-radio.wpcf7-special-radio-container-thema {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 5px;
+}
+
+.wpcf7-special-radio-thema:active+.thema {
+    opacity: .9;
+}
+
+.wpcf7-special-radio-thema:checked+.thema {
+    -webkit-filter: none;
+    -moz-filter: none;
+    filter: none;
+}
+
+.thema {
+    cursor: pointer;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    -webkit-transition: all 100ms ease-in;
+    -moz-transition: all 100ms ease-in;
+    transition: all 100ms ease-in;
+    -webkit-filter: brightness(1.8) grayscale(1) opacity(.3);
+    -moz-filter: brightness(1.8) grayscale(1) opacity(.3);
+    filter: brightness(1.8) grayscale(1) opacity(.3);
+}
+
+.thema:hover {
+    -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
+    -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
+    filter: brightness(1.2) grayscale(.5) opacity(.9);
+}
+
+
+
+.wpcf7 input[type="url"],
+.wpcf7 input[type="email"],
+.wpcf7 input[type="tel"],
+.wpcf7 input[type="text"],
+.wpcf7-validates-as-number,
+footer input,
+select {
+    margin-bottom: 20px !important;
+}
+
+
+
+
+.form_sand input[type="text"],
+.form_sand input[type="email"] {
+    background-color: transparent;
+    border: 0px !important;
+    border-bottom: 2px solid #000000 !important;
+    margin-bottom: 50px;
+}
+
+.form_sand input[type="checkbox"] {
+    margin-left: 10px;
+}
+
+.form_sand textarea {
+    background-color: transparent;
+    border: 0px !important;
+    border-bottom: 2px solid #000000 !important;
+    width: 100%
+}
+
+
+
+.form_sand h4 {
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 5px !important;
+}
+
+.form_sand p {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.form_sand .pflichtfelder {
+    font-size: 13px;
+
+}
+
+.form_sand a {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--color-main);
+}
+
+.form_sand a:hover {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--color-sub);
+    text-decoration: underline;
+}
+
+
+
+.form_sand input[type=submit] {
+    color: #000000;
+    border: 2px solid #000000 !important;
+    border-radius: 5px !important;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: transparent;
+}
+
+.form_sand input[type=submit]:hover {
+    color: var(--color-light);
+    background-color: #000000;
+    border: 2px solid #000000 !important;
+    border-radius: 5px !important;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+
+.header-text {
+    text-align: center;
+    font-family: var(--font-heading), sans-serif;
+    font-size: 35px;
+    color: var(--color-main);
+    line-height: 1.5;
+    text-align: left;
+    font-weight: 700;
+    padding-top: 30px;
+    text-transform: uppercase;
+
+}
+
+.datenschutz a,
+.datenschutz a:hover {
+    font-size: 18px;
+    color: var(--color-main);
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+
+.themabox img {
+    max-width: 100px !important;
+}
+
+.themabox img {
+    max-width: 300px;
+    margin: auto;
+    display: block;
+    padding: 20px 0px;
+
+}
+
+.themabox {
+    background: white;
+    box-shadow: 0 0 15px #00000000;
+    transition: all 500ms;
+}
+
+.themabox:hover {
+    box-shadow: 0 0 15px #00000052;
+}
+
+.themabox p {
+    background: var(--color-custom);
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 10px;
+    text-align: center;
+}
+
+.themabox img {
+    width: 100%;
+    margin: auto;
+    display: block;
+    padding: 20px 0
+}
+
+footer .legal-row li a {
+    margin: 0 8px;
+}
+
+@media(max-width: 768px) {
+    footer .legal-row li a {
+        margin-right: 12px;
+        margin-left: 0;
+    }
+
+    .top-bar {
+        display: none !important;
+    }
+}
+
+
+@media (max-width: 768px) {
+    footer .footer-inner {
+        margin-top: 50px;
+    }
+}
+
+@media (min-width: 1023px) {
+    .desktop-mt50 {
+        margin-top: 50px;
+    }
+}
+
+.element-cta h4 {
+    font-family: var(--font-custom) !important;
+}
+
+
+header .container {
+    max-width: 100%;
+}
+
+/*
+tiles
+*/
+
+.element-cta h4 {
+    width: calc(100% - 20px);
+}
+
+@media (max-width: 768px) {
+    .element-cta h4 {
+        font-size: 30px;
+    }
+}
+
+
+.tiles .tile.tile-imageohover .icon {
+    position: absolute;
+    top: 13%;
+    left: 50%;
+    width: 75px;
+    transform: translateX(-50%);
+}
+
+.tiles .tile.tile-imageohover h4 {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    color: white;
+}
+
+.tiles .tile.tile-imageohover .desc {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    color: white;
+}
+
+header.masterhead {
+    height: 100px;
+}
+
+@media (max-width: 768px) {
+    header.masterhead {
+        height: 70px;
+    }
+}
+
+
+
+/*
+BUDI TICKETS
+*/
+
+
+.ticket-wrapper {
+    display: grid
+}
+
+.ticket-wrapper .ticket-image {
+    padding: 50px 0;
+    text-align: center;
+
+}
+
+.ticket-wrapper .ticket-image img {
+
+    max-width: 250px;
+    height: auto;
+
+}
+
+.ticket-wrapper .ticket-title {
+
+    background-color: var(--color-sub);
+    color: white !important;
+}
+
+.ticket-wrapper .ticket-title h1 {
+
+    color: white !important;
+    margin: 0;
+    padding: 25px;
+}
+
+
+
+.ticket-wrapper .ticket-info {
+    background-color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+
+.wpforms-container .wpf-center {
+    margin: 0 auto !important;
+    max-width: 100% !important;
+    width: 100% !important;
+
+}
+
+div.wpforms-container-full .wpforms-form input[type=text],
+div.wpforms-container-full .wpforms-form input[type=tel],
+div.wpforms-container-full .wpforms-form input[type=url],
+div.wpforms-container-full .wpforms-form textarea,
+div.wpforms-container-full .wpforms-form input[type=email],
+.wpforms-form .choices__inner,
+.wpforms-form input[type=email],
+.wpforms-form input[type=tel] {
+    width: 100%;
+    border: 0px;
+    border-bottom: 1px solid #96ACBB;
+    border-radius: 0px;
+    padding: 0 0 22px 0;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    background: #fff;
+    color: var(--color-main);
+}
+
+
+div.wpforms-container-full .wpforms-form .choices__inner {
+    border-top: none !important;
+    border-right: none !important;
+    border-bottom: 1px solid #0B3753 !important;
+    border-left: none !important;
+    border-radius: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+div.wpforms-container-full .wpforms-form .choices__inner {
+    line-height: 1.2em;
+    white-space: break-spaces;
+}
+
+div.wpforms-container .wpforms-form .choices__list--dropdown {
+    position: relative !important;
+}
+
+
+
+.wpforms-container ::-webkit-input-placeholder {
+    /* Chrome and Safari */
+    color: var(--color-main);
+}
+
+.wpforms-container :-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: var(--color-main);
+    opacity: 1;
+}
+
+.wpforms-container ::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: var(--color-main);
+    opacity: 1;
+}
+
+.wpforms-container :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: var(--color-main);
+}
+
+.wpforms-container ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: var(--color-main);
+}
+
+.wpforms-container ::placeholder {
+    color: var(--color-main);
+}
+
+div.wpforms-container .wpforms-field-label {
+    color: var(--color-sub) !important;
+    padding-bottom: 25px !important;
+    font-size: 22px !important;
+}
+
+.budi_button .h_links {
+    border: none !important;
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+.budi_button .h_links:hover {
+    border: none !important;
+    background: transparent !important;
+}
+
+
+@media (min-width: 1300px) {
+
+    .info:before {
+        content: url('/wp-content/uploads/2023/06/spitze_budi.svg');
+        display: inline-block;
+        position: absolute;
+        top: 20%;
+        left: -10px;
+    }
+
+}
+
+@media (max-width: 1100px) {
+
+    .bild-oben {
+        display: none;
+    }
+
+    .suche-leiste {
+        width: 100% !important;
+    }
+
+}
+
+div.masterhead .container .container-inner {
+
+    display: flex;
+}
+
+/* Brandshop Multistep form */
+.budi-brandshop-multistep-form .wpforms-page {
+    display: block !important;
+}
+
+.budi-brandshop-multistep-form {
+    max-width: 1110px !important;
+    margin-block: 0 !important;
+    padding: 55px 100px 70px !important;
+    box-shadow: 0px 8px 30px 0px #0000001F !important;
+    border-radius: 20px !important;
+}
+
+.budi-brandshop-multistep-form .wpforms-field {
+    margin-bottom: 25px !important;
+    padding: 0 !important;
+}
+
+.budi-brandshop-multistep-form .wpforms-field-pagebreak {
+    padding: 0 !important;
+}
+
+.budi-brandshop-multistep-form .wpforms-field-pagebreak>div {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.budi-brandshop-multistep-form .wpforms-field-pagebreak>div::before,
+.budi-brandshop-multistep-form .wpforms-field-pagebreak>div::after {
+    display: none;
+}
+
+.budi-brandshop-multistep-form .wpforms-field-pagebreak:has(.wpforms-page-prev)>div {
+    justify-content: space-between;
+}
+
+.budi-brandshop-multistep-form .wpforms-page-indicator {
+    display: none;
+}
+
+.budi-brandshop-multistep-form .wpforms-field.budi-brandshop-multistep-form__header {
+    margin-bottom: 50px !important;
+    text-align: center;
+    font-size: 50px !important;
+    font-weight: 600 !important;
+    line-height: 1.2em !important;
+}
+
+.budi-brandshop-multistep-form__header {
+    color: var(--color-main) !important;
+}
+
+.budi-brandshop-multistep-form__header span {
+    color: var(--color-sub) !important;
+}
+
+.budi-brandshop-multistep-form input[type="text"],
+.budi-brandshop-multistep-form input[type="email"],
+.budi-brandshop-multistep-form input[type="tel"],
+.budi-brandshop-multistep-form input[type="url"],
+.budi-brandshop-multistep-form input[type="number"],
+.budi-brandshop-multistep-form input[type="date"],
+.budi-brandshop-multistep-form select {
+    max-width: 100% !important;
+    margin-bottom: 25px !important;
+    padding: 13px 20px !important;
+    border: 1px solid #1111121A !important;
+    border-radius: 5px !important;
+    height: auto !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    color: var(--color-main) !important;
+}
+
+.budi-brandshop-multistep-form select {
+    -moz-appearance: none !important;
+    -webkit-appearance: none !important;
+    appearance: none !important;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E") !important;
+    background-repeat: no-repeat !important;
+    background-position: right 20px center !important;
+    background-size: 16px !important;
+}
+
+.budi-brandshop-multistep-form .wpforms-page-button {
+    margin: 0 !important;
+    background-color: var(--color-sub) !important;
+    color: #fff !important;
+    font-weight: 600 !important;
+    text-transform: uppercase !important;
+    padding: 14px 20px !important;
+    min-width: 230px !important;
+    border-radius: 10px !important;
+}
+
+.budi-brandshop-multistep-form .wpforms-page-button.wpforms-page-prev {
+    background-color: #0B37530F !important;
+    color: #0B375380 !important;
+}
+
+.budi-form-button-solid {
+    display: inline-block !important;
+    min-width: auto !important;
+    border: 1px solid var(--color-sub) !important;
+    border-radius: 10px !important;
+    padding: 10px 20px !important;
+    font-size: 18px !important;
+    font-weight: 400 !important;
+    color: var(--color-sub) !important;
+    text-align: center !important;
+    transition: all 0.3s ease !important;
+}
+
+#budi-show-vourcher.budi-form-button-solid {
+    display: block !important;
+}
+
+.budi-form-button-solid:hover {
+    background-color: var(--color-sub) !important;
+    color: #fff !important;
+}
+
+#wpforms-36102-field_24-container,
+#wpforms-36102-field_27-container {
+    margin-bottom: 0 !important;
+}
+
+#wpforms-36102-field_24-container .wpforms-field-layout-columns .wpforms-layout-column:nth-child(2){
+    width: 35%;
+}
+
+#wpforms-36102-field_24-container .wpforms-field-layout-columns .wpforms-layout-column:nth-child(3){
+    width: 15%;
+}
