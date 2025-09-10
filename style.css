@@ -1341,6 +1341,32 @@ div.masterhead .container .container-inner {
     }
 }
 
+@media screen and (max-width: 767px) {
+    #wpforms-36102-field_24-container .wpforms-field-layout-columns .wpforms-layout-column:nth-child(2) {
+        width: 100%;
+    }
+    
+    #wpforms-36102-field_24-container .wpforms-field-layout-columns .wpforms-layout-column:nth-child(3) {
+        width: 100%;
+    }
+    .budi-brandshop-multistep-form .wpforms-submit-container{
+        position: relative !important;
+    }
+
+    .budi-brandshop-multistep-form .wpforms-submit-container .wpforms-submit{
+        width: 100%;
+    }
+
+    .budi-brandshop-multistep-form .wpforms-layout-row,
+    .budi-brandshop-multistep-form .wpforms-field-layout-columns {
+        margin-inline: 0 !important;
+    }
+
+    .budi-brandshop-multistep-form .wpforms-layout-column{
+        padding-inline: 0 !important;
+    }
+}
+
 @media (max-width: 480px) {
     .brandshop-login-card {
         padding: 25px 15px;
@@ -1471,6 +1497,10 @@ body:has(.password-form-container) .container.page-content {
     .password-form-title {
         font-size: 40px;
         margin-bottom: 30px;
+    }
+
+    div.wpforms-container-full .wpforms-form button[type=submit]{
+        max-width: 100%;
     }
 }
 

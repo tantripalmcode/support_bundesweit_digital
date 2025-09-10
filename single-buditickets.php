@@ -38,13 +38,22 @@ get_header(); ?>
                     } else {
                         echo sprintf('<h2 class="password-form-title">%s</h2>', __('Jetzt einloggen', 'budigital-child'));
                     }
+
+                    // Check if there's a password error (user was redirected back after incorrect password)
+                    if (isset($_GET['password_attempt']) && post_password_required()) {
+                        echo '<div class="password-error-message" style="background-color: #f8d7da; color: #721c24; padding: 12px; border: 1px solid #f5c6cb; border-radius: 4px; margin-bottom: 15px; font-size: 14px;">';
+                        echo __('Das eingegebene Passwort ist nicht korrekt. Bitte versuchen Sie es erneut.', 'budigital-child');
+                        echo '</div>';
+                    }
                     ?>
 
 
                     <?php
                     // Display the password form
                     $label = 'pwbox-' . get_the_ID();
+                    $current_url = get_permalink();
                     $form = '<form action="' . esc_url(site_url('wp-login.php?action=postpass', 'login_post')) . '" method="post">
+                                    <input type="hidden" name="redirect_to" value="' . esc_url(add_query_arg('password_attempt', '1', $current_url)) . '" />
                                     <div class="password-form">
                                         <label for="' . $label . '" class="password-form-label sr-only">' . __("Password:", 'budigital-child') . '</label>
                                         <input name="post_password" id="' . $label . '" type="password" size="20" maxlength="20" placeholder="' . __("Passwort *", 'budigital-child') . '" />
